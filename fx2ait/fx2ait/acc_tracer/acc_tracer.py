@@ -286,7 +286,7 @@ class ConditionalExceptionBoolCondWrapper(nn.Module):
 class AccRewritingTracer(Tracer):
     # Add an explicit check for mutable operations, which break symbolic tracing.
     check_mutable_operations = True
-    # Disble proxying buffers, which currently breaks some quantization code
+    # Disable proxying buffers, which currently breaks some quantization code
     proxy_buffer_attributes = False
 
     # Note: Treat ConditionalExceptionWrapper as a leaf so that we don't

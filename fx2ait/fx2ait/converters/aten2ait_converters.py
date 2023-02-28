@@ -759,15 +759,15 @@ def aten_ops_reshape(
     if new_shape.count(-1):
         assert new_shape.count(-1) == 1
         input_shape = size()(input_val)
-        unkown_dim = input_shape[0]
+        unknown_dim = input_shape[0]
         for i in range(1, len(input_shape)):
-            unkown_dim = unkown_dim * input_shape[i]
+            unknown_dim = unknown_dim * input_shape[i]
         idx = new_shape.index(-1)
 
         for s in new_shape:
             if s != -1:
-                unkown_dim = unkown_dim / s
-        new_shape[idx] = unkown_dim
+                unknown_dim = unknown_dim / s
+        new_shape[idx] = unknown_dim
 
     return reshape()(input_val, new_shape)
 

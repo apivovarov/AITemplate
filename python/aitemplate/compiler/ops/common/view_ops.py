@@ -237,7 +237,7 @@ class reshape(_reshape_base):
     def _infer_shapes(self, x: Tensor):
         # There are two cases:
         # 1) there is only one unknown shape.
-        # 2) there is no unkown shape and all shape dimensions are represented as IntVarTensor
+        # 2) there is no unknown shape and all shape dimensions are represented as IntVarTensor
         # For 1), the view op will deduce the shape of if one dim is labeled as -1,
         #         but it can't do so with more than 1 dynamic dimension
         # For 2), when all dynamic shapes are known, we should be able to pass the input shape to out.
@@ -300,7 +300,7 @@ class reshape(_reshape_base):
     def gen_function(self) -> str:
         # There are two cases:
         # 1) there is only one unknown shape.
-        # 2) there is no unkown shape and all shape dimensions are represented as IntVarTensor
+        # 2) there is no unknown shape and all shape dimensions are represented as IntVarTensor
         # For 1), at implementation, the uknown dimension = X.flatten()/(*known_out_shape)
         # For 2), when all dynamic shapes are intVarTensor, output_shape = input_shape.
         target = backend.target.Target.current()

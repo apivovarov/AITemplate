@@ -268,7 +268,7 @@ class Target(object):
     def force_profile(self) -> bool:
         """Whether to force profile.
 
-        Force profiling regarless in_ci_env, disable_profiler_codegen
+        Force profiling regardless in_ci_env, disable_profiler_codegen
 
         Returns
         -------

@@ -393,7 +393,7 @@ class ResNet(nn.Module):
 
 def make_stage(*args, **kwargs):
     """
-    Deprecated alias for backward compatibiltiy.
+    Deprecated alias for backward compatibility.
     """
     return ResNet.make_stage(*args, **kwargs)
 

@@ -354,7 +354,7 @@ class Detectron2Verification(unittest.TestCase):
         # Keep in mind that we are comparing sets here,
         # not lists because all items are sorted by score and
         # a small difference in score can result in a wrong items order.
-        # We do our best to estabilish 1:1 mapping for comparison
+        # We do our best to establish 1:1 mapping for comparison
         pt_boxes = pt_instance.pred_boxes.tensor.to(dtype=result["boxes"].dtype).sort(
             dim=0
         )

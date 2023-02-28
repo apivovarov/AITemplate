@@ -330,9 +330,9 @@ _C.MODEL.ROI_BOX_HEAD.TRAIN_ON_PRED_BOXES = False
 
 # Federated loss can be used to improve the training of LVIS
 _C.MODEL.ROI_BOX_HEAD.USE_FED_LOSS = False
-# Sigmoid cross entrophy is used with federated loss
+# Sigmoid cross entropy is used with federated loss
 _C.MODEL.ROI_BOX_HEAD.USE_SIGMOID_CE = False
-# The power value applied to image_count when calcualting frequency weight
+# The power value applied to image_count when calculating frequency weight
 _C.MODEL.ROI_BOX_HEAD.FED_LOSS_FREQ_WEIGHT_POWER = 0.5
 # Number of classes to keep in total
 _C.MODEL.ROI_BOX_HEAD.FED_LOSS_NUM_CLASSES = 50

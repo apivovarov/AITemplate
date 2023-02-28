@@ -129,7 +129,7 @@ def map_set(
 
     If value name is given, sets map_name["key_name"] = value_name. Else, sets
     map_name["key_name"] = key_name. Special maps like dim_map may make
-    additional modificiations to the LHS of this expression.
+    additional modifications to the LHS of this expression.
 
     Parameters
     ----------
