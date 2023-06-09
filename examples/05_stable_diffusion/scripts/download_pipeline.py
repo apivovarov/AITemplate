@@ -35,7 +35,7 @@ def download_pipeline_files(model_name, token, save_directory) -> None:
         revision="fp16",
         torch_dtype=torch.float16,
         # use provided token or the one generated with `huggingface-cli login``
-        use_auth_token=token if token != "" else True,
+        #use_auth_token=token if token != "" else True,
     ).save_pretrained(save_directory)
 
 
